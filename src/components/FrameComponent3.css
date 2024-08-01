@@ -1,0 +1,158 @@
+.instance-child {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 4px 26.7px rgba(0, 0, 0, 0.13);
+  background-color: var(--color-white);
+}
+.samriddh {
+  text-decoration: none;
+  position: relative;
+  letter-spacing: -0.46px;
+  line-height: 2rem;
+  font-weight: 700;
+  color: inherit;
+  white-space: nowrap;
+  z-index: 1;
+}
+.samriddh-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-11xs-6) 0 0;
+}
+
+button {
+  font-size: 1.4vw;
+  padding: 4px 6px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.about-us {
+  text-decoration: none;
+  position: relative;
+  letter-spacing: -0.46px;
+  line-height: 2rem;
+  font-weight: 500;
+  color: inherit;
+  display: inline-block;
+  min-width: 6.625rem;
+  white-space: nowrap;
+  cursor:pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.about-us:hover{
+  color:blue;
+  transform: scale(1.1);
+}
+
+.products {
+  display: inline-block;
+  min-width: 6.5rem;
+  cursor:pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.products:hover{
+  color:blue;
+  transform: scale(1.1);
+}
+.become-our-partner,
+.contact-us,
+.login,
+.products {
+  text-decoration: none;
+  position: relative;
+  letter-spacing: -0.46px;
+  line-height: 2rem;
+  font-weight: 500;
+  color: inherit;
+}
+.become-our-partner,
+.contact-us {
+  white-space: nowrap;
+  cursor:pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.contact-us:hover{
+  color:blue;
+  transform: scale(1.1);
+}
+.become-our-partner:hover{
+  color:blue;
+  cursor:pointer;
+  transform: scale(1.1);
+}
+.login {
+  display: inline-block;
+  min-width: 3.938rem;
+}
+.about-us-parent,
+.frame-section,
+.rectangle-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+}
+.about-us-parent {
+  justify-content: flex-start;
+  gap: var(--gap-44xl);
+  z-index: 1;
+  font-size: var(--font-size-5xl);
+  color: var(--color-dimgray);
+  font-family: var(--font-poppins);
+}
+
+
+.frame-section,
+.rectangle-parent {
+  box-sizing: border-box;
+}
+.rectangle-parent {
+  flex: 1;
+  justify-content: space-between;
+  padding: var(--padding-9xl) var(--padding-51xl) var(--padding-8xl-4);
+  position: relative;
+  gap: var(--gap-xl);
+  z-index: 5;
+  text-align: left;
+  font-size: var(--font-size-11xl);
+  color: var(--color-darkslategray);
+  font-family: var(--font-newsreader);
+}
+.frame-section {
+  align-self: stretch;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-47xl-8);
+  top: 0;
+  z-index: 99;
+  position: sticky;
+}
+@media screen and (max-width: 1225px) {
+  .about-us-parent {
+    display: none;
+    gap: var(--gap-12xl);
+  }
+}
+@media screen and (max-width: 850px) {
+  .rectangle-parent {
+    padding-left: var(--padding-16xl);
+    padding-right: var(--padding-16xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .about-us-parent {
+    gap: var(--gap-base);
+  }
+}
